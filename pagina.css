@@ -177,3 +177,50 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.phone-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 18px;
+    padding: 12px 22px;
+
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    color: #222;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+    transition: all 0.3s ease;
+}
+
+.phone-header i {
+    background: #25D366;
+    color: white;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.phone-header:hover {
+    transform: translateY(-2px) scale(1.02);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
