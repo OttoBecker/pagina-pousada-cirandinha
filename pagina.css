@@ -54,13 +54,6 @@ a {
 }
 
 /* ========================= HEADER ========================= */
-.site-header {
-    position: relative;
-    z-index: 10;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-}
-
 .header-container {
     width: min(calc(100% - 40px), var(--container));
     min-height: 88px;
@@ -706,11 +699,6 @@ a {
         width: min(calc(100% - 28px), var(--container));
     }
 
-    .site-header {
-        position: sticky;
-        top: 0;
-    }
-
     .header-container {
         min-height: 72px;
     }
@@ -825,4 +813,14 @@ a {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
     }
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
 }
